@@ -3,6 +3,7 @@
 import numpy as np
 
 def metodo_potencia (A, tol = 0.0001):
+    """Recibe una matriz A y una tolerancia. Devuelve el autovalor de mayor modulo y el autovector asociado."""
     n = np.shape(A)[0]
     tol = 0.0001                    #tolerancia pedida para que se deje de ejecutar el while
     dif = tol + 1
@@ -27,6 +28,7 @@ def metodo_potencia (A, tol = 0.0001):
 #Ahora hago un metodo de la potencia para Hotelling ( lo unico que cambio es el uso de epsilon)
 
 def metodo_potenciaH (A, e =0.9999):
+    """Recibe una matriz A y una tolerancia. Devuelve el autovalor de mayor modulo y el autovector asociado."""
     n = np.shape(A)[0]
     tol = 1 - e                    #tolerancia pedida para que se deje de ejecutar el while
     dif = tol + 1
